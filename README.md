@@ -28,3 +28,17 @@ This project bridges **Computer Vision (OpenCV)** and **Generative Deep Learning
                                                                                 │ Rendered 8K         │
                                                                                 │ Photorealistic Art  │
                                                                                 └─────────────────────┘
+
+
+
+## 🛠️ Tool & Technology Stack
+
+| Tool / Framework | Component Type | Function & Purpose |
+| :--- | :--- | :--- |
+| **PyTorch (`torch`)** | Deep Learning Framework | Handles CUDA tensor execution and model weight loading on the GPU. |
+| **Hugging Face `diffusers`** | Model Orchestration | Manages the Stable Diffusion pipeline execution loop and memory slicing. |
+| **`sd-controlnet-canny`** | Neural Network Adapter | Adds spatial conditioning layers to Stable Diffusion without retraining the base model. |
+| **Stable Diffusion v1.5** | Latent Diffusion Model | Generates photorealistic RGB textures, materials, and lighting effects. |
+| **OpenCV (`cv2`)** | Computer Vision | Performs low-level pixel manipulation and threshold edge detection. |
+| **`UniPCMultistepScheduler`** | ODE Fast-Sampling Engine | Reduces required inference steps from 50 to 20, cutting generation time by 60%. |
+| **Gradio** | Web UI Engine | Serves a shareable, real-time interactive browser dashboard directly from Google Colab. |
