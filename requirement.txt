@@ -1,0 +1,11 @@
+# requirements.txt
+torch>=2.0.0
+torchvision
+diffusers>=0.21.0
+transformers>=4.30.0
+accelerate>=0.20.0
+controlnet_aux
+gradio>=3.35.0
+opencv-python
+pillow
+numpy
